@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color0">#00000000</color> <!--Background-->
+
+    <color name="color1">#000000</color> <!--Background-->
+    <color name="color2">#242424</color> <!--Botões de voltar, cancelar..-->
+    <color name="color3">#4C4C4C</color> <!--Algum componente que for ficar por cima do BG-->
+
+    <color name="color4">#797979</color> <!--Letra cinza-->
+    <color name="color5">#EAEAEA</color> <!--Letra branca-->
+
+    <color name="color6">#02E26B</color> <!--Botões de ação positiva, confirmar, ir..-->
+    <color name="color7">#02E26B</color> <!--Bordas, uso pontual na interface..-->
+
+    <color name="color8">#FFBAFB</color> <!--Botões de ação positiva, confirmar, ir..-->
+    <color name="color9">#BAFFFF</color> <!--Bordas, uso pontual na interface..-->
+
+
+
+    <!--ContextManager.getColorHex(5)-->
+
+    <!-- Cores de teste de UI -->
+    <color name="green">#039749</color>
+    <color name="green_light">#BFE7C6</color>
+    <color name="green_dark">#004607</color>
+    <color name="green_dark_alpha">#4D004607</color>
+
+    <color name="blue">#0073ED</color>
+    <color name="yellow">#F7C204</color>
+    <color name="orange">#ff7300</color>
+    <color name="red">#DB311E</color>
+    <color name="black">#1F1F1F</color>
+    <color name="white">#EAEAEA</color>
+    <color name="gray">#353535</color>
+    <color name="gray_light">#626262</color>
+    <color name="gray_lightest">#B0B0B0</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_background_padrao">#1c1b1f</color>
+
+    <color name="blue_dark">#213635</color>
+    <color name="green_dark2">#223621</color>
+    <color name="yellow_dark">#363221</color>
+    <color name="orange_dark">#362a21</color>
+    <color name="red_dark">#362121</color>
+
+
+    <color name="purple">#6A0DAD</color>
+    <color name="pink">#FF007F</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="teal">#008080</color>
+    <color name="navy">#000080</color>
+    <color name="indigo">#4B0082</color>
+    <color name="brown">#A52A2A</color>
+    <color name="maroon">#800000</color>
+    <color name="olive">#808000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gold">#FFD700</color>
+    <color name="green_dark_plus">#004504</color>
+    <color name="red_dark_plus">#450000</color>
+</resources>

@@ -1,0 +1,78 @@
+CREATE TABLE Episode (
+    id INTEGER NOT NULL PRIMARY KEY,
+    title TEXT NOT NULL,
+    description TEXT NOT NULL,
+    image_url TEXT,
+    audio_url TEXT NOT NULL,
+    duration INTEGER NOT NULL,
+    published_at TEXT NOT NULL,
+    slug TEXT NOT NULL,
+    episode TEXT NOT NULL,
+    product TEXT NOT NULL,
+    product_name TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    jump_to_time INTEGER NOT NULL,
+    guests TEXT NOT NULL,
+    post_type_class TEXT NOT NULL,
+    elapsed_time INTEGER NOT NULL DEFAULT 0
+);
+
+
+-- Query para pegar todos os episódios
+selectAllEpisodes:
+SELECT * FROM Episode;
+
+-- Query para pegar um episódio por id
+selectEpisodeById:
+SELECT * FROM Episode WHERE id = ?;
+
+-- Query para inserir um novo episódio
+insertEpisode:
+INSERT INTO Episode (
+    title,
+    description,
+    image_url,
+    audio_url,
+    duration,
+    published_at,
+    slug,
+    episode,
+    product,
+    product_name,
+    subject,
+    jump_to_time,
+    guests,
+    post_type_class,
+    elapsed_time
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?);
+
+
+-- Query para deletar um episódio por id
+deleteEpisodeById:
+DELETE FROM Episode WHERE id = ?;
+
+
+
+-- Query para atualizar um episódio
+updateEpisode:
+UPDATE Episode SET
+    title = ?,
+    description = ?,
+    image_url = ?,
+    audio_url = ?,
+    duration = ?,
+    published_at = ?,
+    slug = ?,
+    episode = ?,
+    product = ?,
+    product_name = ?,
+    subject = ?,
+    jump_to_time = ?,
+    guests = ?,
+    post_type_class = ?,
+    elapsed_time = ?
+WHERE id = ?;
+
+-- Query para deletar todos os episódios
+deleteAllEpisodes:
+DELETE FROM Episode;

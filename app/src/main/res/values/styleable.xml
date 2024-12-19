@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon" format="reference" />
+    <attr name="bgdColor" format="color|string"  />
+
+
+    <declare-styleable name="DefaultButton">
+        <attr name="icon" />
+        <attr name="label" format="string" />
+        <attr name="width" format="dimension|float" />
+        <attr name="default_width" format="boolean" />
+        <attr name="bgdColor" />
+        <attr name="labelColor" format="color|string" />
+        <attr name="borderColorOnFocus" format="color|string" />
+        <attr name="iconColor" format="color|string" />
+        <attr name="blockActions" format="string" />
+        <attr name="nextFocusLeft" format="reference" />
+        <attr name="nextFocusRight" format="reference" />
+        <attr name="nextFocusUp" format="reference" />
+        <attr name="nextFocusDown" format="reference" />
+    </declare-styleable>
+
+</resources>

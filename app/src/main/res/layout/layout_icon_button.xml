@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:tag="action_button"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:focusable="true"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:tint="@color/gray_light"/>
+</LinearLayout>
+

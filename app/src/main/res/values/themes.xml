@@ -1,0 +1,24 @@
+<!--
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ReNerd" parent="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:windowTranslucentStatus">true</item>
+      <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+
+    <style name="Theme.ReNerd" parent="Base.Theme.ReNerd" />
+</resources>
+
+-->
+
+
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<style name="Base.Theme.FSM" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:fontFamily">@font/geist_regular_fontfamily</item>
+</style>
+
+<style name="Theme.FSM" parent="Base.Theme.FSM" />
+</resources>
