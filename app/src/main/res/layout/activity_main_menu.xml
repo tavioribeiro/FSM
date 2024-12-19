@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:background="@color/color2"
-    tools:context=".features.episodes.EpisodesActivity">
+    tools:context=".features.main_menu.MainMenuActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_marginTop="30dp"

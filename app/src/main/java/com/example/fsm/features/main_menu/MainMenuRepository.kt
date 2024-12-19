@@ -1,9 +1,9 @@
-package com.example.fsm.features.episodes
+package com.example.fsm.features.main_menu
 
 import android.content.Context
 import com.example.fsm.core.extentions.ContextManager
 
-class EpisodesRepository: EpisodesContract.Repository {
+class MainMenuRepository: MainMenuContract.Repository {
     val context = ContextManager.getGlobalContext()
 
     val sharedPref = context.getSharedPreferences("SharedPrefsReNerd", Context.MODE_PRIVATE)

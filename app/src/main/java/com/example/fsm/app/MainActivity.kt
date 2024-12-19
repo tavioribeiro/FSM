@@ -10,7 +10,7 @@ import android.view.View
 import androidx.annotation.RequiresApi
 import com.example.fsm.core.extentions.ContextManager
 import com.example.fsm.databinding.ActivityMainBinding
-import com.example.fsm.features.episodes.EpisodesActivity
+import com.example.fsm.features.main_menu.MainMenuActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //this.setUpUi()
-        this.goTo(EpisodesActivity::class.java)
+        this.goTo(MainMenuActivity::class.java)
     }
 
 
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun goTo(destiny: Class<EpisodesActivity>){
+    private fun goTo(destiny: Class<MainMenuActivity>){
         val intent = Intent(this, destiny)
         // Usando FLAG para evitar que MainActivity permaneça na pilha
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK

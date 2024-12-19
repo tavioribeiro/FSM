@@ -42,7 +42,7 @@
         </activity>
 
         <activity
-            android:name=".features.episodes.EpisodesActivity"
+            android:name=".features.main_menu.MainMenuActivity"
             android:exported="false">
         </activity>
     </application>

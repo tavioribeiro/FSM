@@ -1,13 +1,13 @@
-package com.example.fsm.features.episodes.di
+package com.example.fsm.features.main_menu.di
 
 
 
-import com.example.fsm.features.episodes.EpisodesContract
-import com.example.fsm.features.episodes.EpisodesPresenter
-import com.example.fsm.features.episodes.EpisodesRepository
+import com.example.fsm.features.main_menu.MainMenuContract
+import com.example.fsm.features.main_menu.MainMenuPresenter
+import com.example.fsm.features.main_menu.MainMenuRepository
 import org.koin.dsl.module
 
-object EpisodesModule {
+object MainMenuModule {
 
 //    val instance = module {
 //
@@ -29,7 +29,7 @@ object EpisodesModule {
 
 
     val instance = module {
-        factory<EpisodesContract.Repository> { EpisodesRepository() }
-        factory<EpisodesContract.Presenter> { EpisodesPresenter(get()) }
+        factory<MainMenuContract.Repository> { MainMenuRepository() }
+        factory<MainMenuContract.Presenter> { MainMenuPresenter(get()) }
     }
 }

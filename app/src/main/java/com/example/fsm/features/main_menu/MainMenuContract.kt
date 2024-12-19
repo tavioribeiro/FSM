@@ -1,8 +1,8 @@
-package com.example.fsm.features.episodes
+package com.example.fsm.features.main_menu
 
 
 
-interface EpisodesContract {
+interface MainMenuContract {
 
     interface View {
 

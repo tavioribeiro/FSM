@@ -1,4 +1,4 @@
-package com.example.fsm.features.episodes
+package com.example.fsm.features.main_menu
 
 
 import android.graphics.Color
@@ -6,15 +6,15 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fsm.core.extentions.ContextManager
-import com.example.fsm.databinding.ActivityEpisodesBinding
 import org.koin.android.ext.android.inject
 import android.content.pm.ActivityInfo
+import com.example.fsm.databinding.ActivityMainMenuBinding
 
 
-class EpisodesActivity: AppCompatActivity(), EpisodesContract.View{
+class MainMenuActivity: AppCompatActivity(), MainMenuContract.View{
 
-    private lateinit var binding: ActivityEpisodesBinding
-    private val presenter: EpisodesContract.Presenter by inject()
+    private lateinit var binding: ActivityMainMenuBinding
+    private val presenter: MainMenuContract.Presenter by inject()
 
 
 
@@ -26,7 +26,7 @@ class EpisodesActivity: AppCompatActivity(), EpisodesContract.View{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityEpisodesBinding.inflate(layoutInflater)
+        binding = ActivityMainMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         this.setUpUi()
