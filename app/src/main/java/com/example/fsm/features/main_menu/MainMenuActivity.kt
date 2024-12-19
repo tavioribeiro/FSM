@@ -18,12 +18,6 @@ class MainMenuActivity: AppCompatActivity(), MainMenuContract.View{
 
 
 
-    private var originalColor1 = ContextManager.getColorHex(0)
-    private var originalColor2 = ContextManager.getColorHex(0)
-
-    private var currentRecyclerViewPoition = 0
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainMenuBinding.inflate(layoutInflater)
