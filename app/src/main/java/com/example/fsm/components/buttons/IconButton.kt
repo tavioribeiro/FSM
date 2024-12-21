@@ -15,8 +15,7 @@ import com.example.fsm.R
 import com.example.fsm.core.extentions.ContextManager
 import com.example.fsm.core.extentions.dpToPx
 import com.example.fsm.core.utils.log
-import com.example.fsm.databinding.LayoutDefaultButtonBinding
-import com.example.fsm.databinding.LayoutIconButtonBinding
+import com.example.fsm.databinding.CLayoutIconButtonBinding
 import core.extensions.blockDPadActions
 import core.extensions.darkenColor
 import core.extensions.lightenColor
@@ -43,7 +42,7 @@ class IconButton @JvmOverloads constructor(
     private var nextFocusDownId: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
 
-    private val binding: LayoutIconButtonBinding = LayoutIconButtonBinding.inflate(LayoutInflater.from(context), this, true)
+    private val binding: CLayoutIconButtonBinding = CLayoutIconButtonBinding.inflate(LayoutInflater.from(context), this, true)
     private var onClickListener: (() -> Unit)? = null
     private val handler = Handler(Looper.getMainLooper())
 
@@ -124,9 +123,7 @@ class IconButton @JvmOverloads constructor(
             //Estilo padrão
             styleBackground(
                 backgroundColor = backgroundColor,
-                radius = 100f,
-                widthInDp = DEFAULT_BUTTON_WIDTH_DP,
-                heightInDp = DEFAULT_BUTTON_HEIGHT_DP
+                radius = 100f
             )
 
             //Estilo baseado no foco
@@ -139,9 +136,7 @@ class IconButton @JvmOverloads constructor(
                     bgColor,
                     radius = 100f,
                     borderWidth = borderWidth,
-                    borderColor = borderColor,
-                    widthInDp = DEFAULT_BUTTON_WIDTH_DP,
-                    heightInDp = DEFAULT_BUTTON_HEIGHT_DP
+                    borderColor = borderColor
                 )
             }
         }
@@ -165,9 +160,7 @@ class IconButton @JvmOverloads constructor(
                     backgroundColor = lightenBackgroundColor,
                     radius = 100f,
                     borderWidth = borderWidth,
-                    borderColor = borderColor,
-                    widthInDp = DEFAULT_BUTTON_WIDTH_DP,
-                    heightInDp = DEFAULT_BUTTON_HEIGHT_DP
+                    borderColor = borderColor
                 )
             }
 
@@ -181,9 +174,7 @@ class IconButton @JvmOverloads constructor(
                         backgroundColor = originalBackgroundColor,
                         radius = 100f,
                         borderWidth = borderWidth,
-                        borderColor = borderColor,
-                        widthInDp = DEFAULT_BUTTON_WIDTH_DP,
-                        heightInDp = DEFAULT_BUTTON_HEIGHT_DP
+                        borderColor = borderColor
                     )
                 }
             }, 100)

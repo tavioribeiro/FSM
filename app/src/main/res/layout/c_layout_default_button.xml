@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:tag="action_button"
+    android:layout_width="352.84dp"
+    android:layout_height="48dp"
+    android:paddingHorizontal="10dp"
+    android:focusable="true"
+    android:clickable="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content_container"
+            android:tag="action_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:visibility="gone"
+                app:tint="@color/gray_light"/>
+
+            <TextView
+                android:id="@+id/textView_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/geist_regular"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:ellipsize="none"/>
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:indeterminateTint="@color/color5"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>
+

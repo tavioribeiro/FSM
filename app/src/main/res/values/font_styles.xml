@@ -30,11 +30,22 @@
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="TS_Body" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/geist_regular_fontfamily</item>
-        <item name="android:textSize">16sp</item>
+
+    <style name="TS_Label" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/geist_semibold</item>
+        <item name="android:textSize">21.05sp</item>
         <item name="android:textStyle">normal</item>
     </style>
+
+
+
+    <style name="TS_Body" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/geist_regular</item>
+        <item name="android:textSize">16.84sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
 
     <style name="TS_Callout" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/geist_regular_fontfamily</item>

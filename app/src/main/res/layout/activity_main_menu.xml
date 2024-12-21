@@ -8,8 +8,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@color/color2"
+    android:background="@color/color1"
     tools:context=".features.main_menu.MainMenuActivity">
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_marginTop="30dp"
@@ -19,5 +20,130 @@
             android:layout_width="wrap_content"
             android:layout_height="22dp"
             android:src="@drawable/fsm_name" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="29.89dp"
+            android:layout_marginTop="100dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Monitorar CPU"
+                style="@style/TS_Label"
+                android:textColor="@color/color5" />
+
+            <com.example.fsm.components.swiches.DefaultSwitch
+                android:id="@+id/cpu_monitor_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:checkedColor="@color/color6"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="29.89dp"
+            android:layout_marginTop="42.1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Monitorar Memória RAM"
+                style="@style/TS_Label"
+                android:textColor="@color/color5" />
+
+            <com.example.fsm.components.swiches.DefaultSwitch
+                android:id="@+id/ram_monitor_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:checkedColor="@color/color6"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="29.89dp"
+            android:layout_marginTop="42.1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Monitorar Rede"
+                style="@style/TS_Label"
+                android:textColor="@color/color5" />
+
+            <com.example.fsm.components.swiches.DefaultSwitch
+                android:id="@+id/network_monitor_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:checkedColor="@color/color6"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="29.89dp"
+            android:layout_marginTop="42.1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Monitorar Temperatura"
+                style="@style/TS_Label"
+                android:textColor="@color/color5" />
+
+            <com.example.fsm.components.swiches.DefaultSwitch
+                android:id="@+id/temp_monitor_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:checkedColor="@color/color6"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="@color/color4"
+            android:layout_marginTop="42dp"/>
+
+        <TextView
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:text="Outros monitoramentos (como GPU e Leitura de Disco) exigem informações que estão protegidas pelo sistema. Para acessar esses dados, é necessária a permissão de root. Clique no botão abaixo para conceder a permissão."
+            style="@style/TS_Body"
+            android:layout_marginTop="21.05dp"
+            android:textColor="@color/color5" />
+
+        <com.example.fsm.components.buttons.DefaultButton
+            android:id="@+id/root_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.05dp"
+            app:icon="@drawable/icon_key"
+            app:label="Permitir Acesso Root"/>
     </LinearLayout>
 </LinearLayout>
